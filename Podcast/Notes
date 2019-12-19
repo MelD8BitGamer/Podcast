@@ -1,0 +1,7 @@
+completion handler AKA escaping closure which waits for the API data (we are not sure how long this will take)
+
+
+threads - you are on a main thread by default until envoke URLSession or something like that(think of triage)
+
+synchronous is getting ONE task as a priority and
+ASYNCHRONOUS is returning the code immediately without waiting for the task to finish
