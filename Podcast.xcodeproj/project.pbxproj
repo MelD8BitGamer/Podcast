@@ -10,6 +10,7 @@
 		4D14F33223A94C19009D8C24 /* FavPodcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D14F33123A94C19009D8C24 /* FavPodcastController.swift */; };
 		4D3DE6E023A96FDA005FAE00 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DE6DF23A96FDA005FAE00 /* PodcastTests.swift */; };
 		4D3DE6E823A98A52005FAE00 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DE6E723A98A52005FAE00 /* DetailViewController.swift */; };
+		4D40CF6423B6987900E8E8DA /* UIImage Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D40CF6323B6987900E8E8DA /* UIImage Extension.swift */; };
 		4D71205723A92F4D00EA7ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71205623A92F4D00EA7ACC /* AppDelegate.swift */; };
 		4D71205923A92F4D00EA7ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71205823A92F4D00EA7ACC /* SceneDelegate.swift */; };
 		4D71205B23A92F4D00EA7ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71205A23A92F4D00EA7ACC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		4DA19F7A23A9386B00F0A64B /* PodcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA19F7923A9386B00F0A64B /* PodcastTableViewCell.swift */; };
 		4DC10E7F23AA99850013ED32 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4DC10E7E23AA99850013ED32 /* Notes */; };
 		4DC10E8123AA9C920013ED32 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */; };
+		4DC10EB323AC44620013ED32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC10EB223AC44620013ED32 /* APIClient.swift */; };
 		4DEBF5EF23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */; };
 		4DEBF5F123A9404B00CF4C82 /* ModelPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */; };
 		4DECE69923A9473A004966C3 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DECE69823A9473A004966C3 /* NetworkHelper.swift */; };
@@ -41,6 +43,7 @@
 		4D3DE6DF23A96FDA005FAE00 /* PodcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTests.swift; sourceTree = "<group>"; };
 		4D3DE6E123A96FDA005FAE00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D3DE6E723A98A52005FAE00 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4D40CF6323B6987900E8E8DA /* UIImage Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage Extension.swift"; sourceTree = "<group>"; };
 		4D71205323A92F4D00EA7ACC /* Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D71205623A92F4D00EA7ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D71205823A92F4D00EA7ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		4DA19F7923A9386B00F0A64B /* PodcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTableViewCell.swift; sourceTree = "<group>"; };
 		4DC10E7E23AA99850013ED32 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		4DC10EB223AC44620013ED32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePodcastCellTableViewCell.swift; sourceTree = "<group>"; };
 		4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPodcast.swift; sourceTree = "<group>"; };
 		4DECE69823A9473A004966C3 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -85,6 +89,52 @@
 			path = PodcastTests;
 			sourceTree = "<group>";
 		};
+		4D40CF5D23B68B7300E8E8DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D71205A23A92F4D00EA7ACC /* ViewController.swift */,
+				4D14F33123A94C19009D8C24 /* FavPodcastController.swift */,
+				4D3DE6E723A98A52005FAE00 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D40CF5E23B68CDB00E8E8DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */,
+				4D40CF6323B6987900E8E8DA /* UIImage Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4D40CF5F23B68D0F00E8E8DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4DC10EB223AC44620013ED32 /* APIClient.swift */,
+				4DECE69A23A947BB004966C3 /* AppError.swift */,
+				4DECE69823A9473A004966C3 /* NetworkHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4D40CF6123B68D4300E8E8DA /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */,
+				4DA19F7923A9386B00F0A64B /* PodcastTableViewCell.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		4D40CF6223B68DE000E8E8DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4D71204A23A92F4D00EA7ACC = {
 			isa = PBXGroup;
 			children = (
@@ -106,19 +156,15 @@
 		4D71205523A92F4D00EA7ACC /* Podcast */ = {
 			isa = PBXGroup;
 			children = (
-				4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */,
-				4DECE69823A9473A004966C3 /* NetworkHelper.swift */,
-				4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */,
-				4DA19F7923A9386B00F0A64B /* PodcastTableViewCell.swift */,
-				4DECE69A23A947BB004966C3 /* AppError.swift */,
-				4D71205623A92F4D00EA7ACC /* AppDelegate.swift */,
-				4D71205823A92F4D00EA7ACC /* SceneDelegate.swift */,
-				4D71205A23A92F4D00EA7ACC /* ViewController.swift */,
-				4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */,
 				4DC10E7E23AA99850013ED32 /* Notes */,
-				4D3DE6E723A98A52005FAE00 /* DetailViewController.swift */,
-				4D14F33123A94C19009D8C24 /* FavPodcastController.swift */,
+				4D40CF6223B68DE000E8E8DA /* Models */,
+				4D40CF6123B68D4300E8E8DA /* TableCells */,
+				4D40CF5F23B68D0F00E8E8DA /* Network */,
+				4D40CF5E23B68CDB00E8E8DA /* Extensions */,
+				4D40CF5D23B68B7300E8E8DA /* Controllers */,
 				4D71205C23A92F4D00EA7ACC /* Main.storyboard */,
+				4D71205823A92F4D00EA7ACC /* SceneDelegate.swift */,
+				4D71205623A92F4D00EA7ACC /* AppDelegate.swift */,
 				4D71205F23A92F5000EA7ACC /* Assets.xcassets */,
 				4D71206123A92F5000EA7ACC /* LaunchScreen.storyboard */,
 				4D71206423A92F5000EA7ACC /* Info.plist */,
@@ -244,9 +290,11 @@
 				4DEBF5EF23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift in Sources */,
 				4DEBF5F123A9404B00CF4C82 /* ModelPodcast.swift in Sources */,
 				4DA19F7A23A9386B00F0A64B /* PodcastTableViewCell.swift in Sources */,
+				4D40CF6423B6987900E8E8DA /* UIImage Extension.swift in Sources */,
 				4D3DE6E823A98A52005FAE00 /* DetailViewController.swift in Sources */,
 				4D14F33223A94C19009D8C24 /* FavPodcastController.swift in Sources */,
 				4D71205923A92F4D00EA7ACC /* SceneDelegate.swift in Sources */,
+				4DC10EB323AC44620013ED32 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

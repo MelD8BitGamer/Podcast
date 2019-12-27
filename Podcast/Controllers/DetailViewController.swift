@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
             podcastImage.image = UIImage(systemName: "questionmark.diamond.fill")
             return
         }
-        ApplePodcast.getImagesFromAPI(for: podcastArtwork) { [weak self] (result) in
+        UIImageView.getImagesFromAPI(for: podcastArtwork) { [weak self] (result) in
             switch result {
             case .failure:
                 DispatchQueue.main.async {
@@ -64,11 +64,11 @@ class DetailViewController: UIViewController {
         guard var favoritePod = modelReference else { fatalError("Bomb")
         }
         favoritePod.favoritedBy = "MelD8BitGamer"
-        ApplePodcast.postFavorite(postPod: favoritePod) { [weak self] (result) in
+        APIClient.postFavorite(postPod: favoritePod) { [weak self] (result) in
             switch result {
             case .failure(let appError):
                 DispatchQueue.main.async {
-                       self?.showAlert(title: "Post Denied", message: "\(appError)")
+                    self?.showAlert(title: "Post Denied", message: "\(appError)")
                 }
             case .success:
                 break

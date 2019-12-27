@@ -9,7 +9,7 @@
 import UIKit
 
 class FavoritePodcastCellTableViewCell: UITableViewCell {
-
+    
     
     @IBOutlet weak var favoritePodcastLabel: UILabel!
     @IBOutlet weak var favoriteNameLabel: UILabel!

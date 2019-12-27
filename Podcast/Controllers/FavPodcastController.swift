@@ -9,7 +9,10 @@
 import UIKit
 
 class FavPodcastController: UIViewController {
-
+//TODO: get your favorites on this tableVIew
+    //TODO: segue tableview to detailVC
+    //TODO: make post button useless when already pressed
+    
     
     
     override func viewDidLoad() {

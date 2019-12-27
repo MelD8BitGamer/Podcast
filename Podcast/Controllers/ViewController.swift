@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     var userQuery = "" {
         didSet {
-            ApplePodcast.getPodcasts(for: userQuery) { [weak self] (result) in
+            APIClient.getPodcasts(for: userQuery) { [weak self] (result) in
                 switch result { //we need
                 case .failure(let appError)://dispatchqueue excutes on the main thread or background thread
                     DispatchQueue.main.async {//anything that is a property or a method use SELF in DispatchQueue
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         podcastTableView.dataSource = self
         podcastSearch.delegate = self
-        
+        podcastTableView.delegate = self
     }
     
     
@@ -66,23 +66,11 @@ extension ViewController: UITableViewDataSource {
         cell.podcastLabel.text = podcastRef[indexPath.row].collectionName
         cell.podcastNameLabel.text = podcastRef[indexPath.row].trackName
         //in order to access the enumeration's associated values is by using a switch statement
-        ApplePodcast.getImagesFromAPI(for: podcastRef[indexPath.row].artworkUrl60) { [weak self] (result) in
-            switch result {
-            case .failure(let appError):
-                DispatchQueue.main.async {
-                    self?.showAlert(title: "Image Error" , message: "Image Not Found \(appError)")
-                }
-            case .success(let image):
-                DispatchQueue.main.async {
-                    cell.podcastImage.image = image
-                }
-            }
-        }
-        return cell
-    }
-    
+        
+    return cell
 }
-
+   
+}
 
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -91,4 +79,11 @@ extension ViewController: UISearchBarDelegate {
     }
 }
 
-
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+        
+    }
+    
+    
+}
