@@ -21,7 +21,6 @@
 		4DC10E7F23AA99850013ED32 /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 4DC10E7E23AA99850013ED32 /* Notes */; };
 		4DC10E8123AA9C920013ED32 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */; };
 		4DC10EB323AC44620013ED32 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC10EB223AC44620013ED32 /* APIClient.swift */; };
-		4DEBF5EF23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */; };
 		4DEBF5F123A9404B00CF4C82 /* ModelPodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */; };
 		4DECE69923A9473A004966C3 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DECE69823A9473A004966C3 /* NetworkHelper.swift */; };
 		4DECE69B23A947BB004966C3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DECE69A23A947BB004966C3 /* AppError.swift */; };
@@ -56,7 +55,6 @@
 		4DC10E7E23AA99850013ED32 /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 		4DC10E8023AA9C920013ED32 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		4DC10EB223AC44620013ED32 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePodcastCellTableViewCell.swift; sourceTree = "<group>"; };
 		4DEBF5F023A9404B00CF4C82 /* ModelPodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPodcast.swift; sourceTree = "<group>"; };
 		4DECE69823A9473A004966C3 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		4DECE69A23A947BB004966C3 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		4D40CF6123B68D4300E8E8DA /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
-				4DEBF5EE23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift */,
 				4DA19F7923A9386B00F0A64B /* PodcastTableViewCell.swift */,
 			);
 			path = TableCells;
@@ -287,7 +284,6 @@
 				4DECE69923A9473A004966C3 /* NetworkHelper.swift in Sources */,
 				4DECE69B23A947BB004966C3 /* AppError.swift in Sources */,
 				4D71205723A92F4D00EA7ACC /* AppDelegate.swift in Sources */,
-				4DEBF5EF23A93EDC00CF4C82 /* FavoritePodcastCellTableViewCell.swift in Sources */,
 				4DEBF5F123A9404B00CF4C82 /* ModelPodcast.swift in Sources */,
 				4DA19F7A23A9386B00F0A64B /* PodcastTableViewCell.swift in Sources */,
 				4D40CF6423B6987900E8E8DA /* UIImage Extension.swift in Sources */,
