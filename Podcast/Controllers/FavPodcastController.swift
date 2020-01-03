@@ -40,9 +40,9 @@ extension FavPodcastController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "podcastCell", for: indexPath) as? PodcastTableViewCell else {fatalError("Could not find Cell")}
         
-            
+        return cell
         }
     }
     
     
-}
+

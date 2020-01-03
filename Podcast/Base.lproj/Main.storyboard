@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ck8-DX-tGu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ck8-DX-tGu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -245,11 +245,11 @@
             </objects>
             <point key="canvasLocation" x="-289" y="21"/>
         </scene>
-        <!--Item 1-->
+        <!--Podcast search-->
         <scene sceneID="XQ0-mq-eYM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xX8-qN-4tS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="3dg-GX-2UG"/>
+                    <tabBarItem key="tabBarItem" title="Podcast search" image="p.circle" catalog="system" id="3dg-GX-2UG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yr4-yx-yc5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -264,11 +264,11 @@
             </objects>
             <point key="canvasLocation" x="630.43478260869574" y="-303.34821428571428"/>
         </scene>
-        <!--Item 2-->
+        <!--Favorites-->
         <scene sceneID="sPx-ne-Xa1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FWy-u0-gzz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="nDp-ug-KGU"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="star.fill" catalog="system" id="nDp-ug-KGU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GCR-bS-tAi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -285,6 +285,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="p.circle" catalog="system" width="64" height="60"/>
         <image name="questionmark.square" catalog="system" width="64" height="56"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>

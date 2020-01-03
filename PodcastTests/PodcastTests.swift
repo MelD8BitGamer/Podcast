@@ -22,7 +22,7 @@ class PodcastTests: XCTestCase {
         _ = podcastData.count
         
         //act
-        ApplePodcast.getPodcasts(for: searchQuery) { result in
+        APIClient.getPodcasts(for: searchQuery) { result in
             switch result {
             case .failure:
                 break
